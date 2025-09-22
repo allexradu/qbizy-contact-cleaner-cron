@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "bunx wrangler dev",
-    "sch": "bunx wrangler dev --test-scheduled"
+    "sch": "bunx wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy --minify"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250922.0",
