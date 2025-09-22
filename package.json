@@ -1,11 +1,30 @@
 {
   "name": "qbizy-contact-cleaner-cron",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bunx wrangler dev",
+    "sch": "bunx wrangler dev --test-scheduled"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@cloudflare/workers-types": "^4.20250922.0",
+    "@types/bun": "^1.2.22",
+    "wrangler": "^4.38.0",
+    "prettier": "^3.6.2",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-ft-flow": "^3.0.11",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jest": "^29.0.1",
+    "eslint-plugin-prettier": "^5.5.4"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "zod": "^3.25.76",
+    "drizzle-zod": "^0.5.1",
+    "drizzle-orm": "^0.35.3",
+    "@neondatabase/serverless": "^0.10.1"
   }
 }
